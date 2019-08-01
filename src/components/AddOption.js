@@ -1,18 +1,37 @@
 import React from 'react';
 
-const AddOption = () => (
 
-    <div>
+class AddOption extends React.Component {
+ 
+    handleAddOption = (e) => {
+        e.preventDefault();
+        alert('t');
+        const option = e.target.elements.fname.value.trim();
+        if (option !== "" ) {
 
-    <form>
-            <input type='text' name='fname' />
-            
-            <button className="button">Add Option</button>
+            this.props.handleAddOption(option);
+           
+        }
+    };
 
-    </form>
+    render() {
+      
+        return (
 
-   </div>
+            <div>
 
-);
+                <form onSubmit={this.handleAddOption}>
+                    <input type='text' name='fname' />
+
+                    <button className="button" >Add Option</button>
+
+                </form>
+
+            </div>
+        );
+    }
+}
+
+
 
 export default AddOption;

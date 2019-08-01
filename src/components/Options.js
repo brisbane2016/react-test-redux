@@ -1,11 +1,29 @@
 import React from 'react';
 import SingleOption from "../components/SingleOption";
-const Options = () => (
 
-    <div>
-        <SingleOption />
+class Options extends React.Component{
 
-    </div>
-);
+
+    render(){
+        return (
+
+            <div> 
+                {
+                    this.props.options.length >= 0 &&
+                    this.props.options.map((option,index) => (
+                        <SingleOption 
+                            key={index} 
+                            handleSingleRemove={this.props.handleSingleRemove}
+                            option={option} 
+                        />
+                        )
+                    )
+                }
+            </div>
+        );
+
+    }
+}
+
 
 export default Options;
