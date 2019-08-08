@@ -13,7 +13,7 @@ import configureStore from './store';
 
 
 
-// new start
+// new starts
 
 
 
