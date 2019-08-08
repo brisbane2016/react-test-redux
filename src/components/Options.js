@@ -15,6 +15,7 @@ class Options extends React.Component{
                             key={index} 
                             handleSingleRemove={this.props.handleSingleRemove}
                             option={option} 
+                            index={index}
                         />
                         )
                     )

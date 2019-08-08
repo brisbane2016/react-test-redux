@@ -8,7 +8,7 @@ const SingleOption = (props) => (
         <button 
             onClick={()=>(
                
-                props.handleSingleRemove(props.option)
+                props.handleSingleRemove(props.index)
                 
             )}>Remove</button>   
     </div>

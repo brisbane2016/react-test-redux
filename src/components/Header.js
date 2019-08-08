@@ -4,7 +4,7 @@ const Header = () => (
 
     <div>
 
-        <h1>React Form test</h1>
+        <h1>React Form with redux </h1>
         <p>why we need this rubbush?</p>
 
     </div>
